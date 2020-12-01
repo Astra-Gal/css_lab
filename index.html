@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Khula:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>CodeClan News</h1>
+        <h1 id="logo">CodeClan News<b><span style="color:goldenrod">_</span></b></h1>
         <nav>
             <ul>
                 <li>
@@ -22,7 +24,75 @@
                 </li>
             </ul>
         </nav>
+        <div id="golden-bit"></div>
     </header>
+    <main>
+        <div class="wrapper">
+        <aside>
+            <div class="box1">
+            <section>
+                <h2>Login</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <input id="email" type="text">
+                    <br>
+                    <label for="password">Password:</label>
+                    <input id="password" type="password">
+                    <br>
+                    <input type="submit">
+                </form>
+            </section>
+            <section>
+                <h2>Categories</h2>
+                <ul>
+                    <li>
+                        <a href="/news/latest">Latest</a>
+                    </li>
+                    <li>
+                        <a href="/news/local">Local</a>
+                    </li>
+                    <li>
+                        <a href="/news/politics">Politics</a>
+                    </li>
+                    <li>
+                        <a href="/news/sports">Sports</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        </aside>
+        <div class="box2">
+        <section>
+            <hgroup>
+                <h2>Latest</h2>
+                <h3>Breaking News</h3>
+            </hgroup>
+        </section>
+        <section>
+            <img class="preview-image" src="https://accountablenow.org/wp-content/uploads/2020/01/placeholder.png" alt="placeholder-image">
+            <hgroup>
+                <h4>Story Headline</h4>
+                <p>This is the first line of the article. The user would be able to click on the preview to read more...</p>
+            </hgroup>
+        </section>
+    </section>
+    <section>
+        <img class="preview-image" src="https://accountablenow.org/wp-content/uploads/2020/01/placeholder.png" alt="placeholder-image">
+        <hgroup>
+            <h4>Story Headline</h4>
+            <p>This is the first line of the article. The user would be able to click on the preview to read more...</p>
+        </hgroup>
+    </section>
+</section>
+<section>
+    <img class="preview-image" src="https://accountablenow.org/wp-content/uploads/2020/01/placeholder.png" alt="placeholder-image">
+    <hgroup>
+        <h4>Story Headline</h4>
+        <p>This is the first line of the article. The user would be able to click on the preview to read more...</p>
+    </hgroup>
+</section>
+</div>
+</div>
     <main>
         <article>
             <hgroup> 
@@ -39,6 +109,50 @@
             <p>Aenean eu commodo elit. Pellentesque eget fringilla lorem. Maecenas dictum cursus orci sed volutpat. Mauris tincidunt lectus vitae lectus blandit ultricies. Sed sapien est, feugiat et eleifend at, placerat sit amet eros. Aliquam vehicula eleifend convallis. Nullam dapibus, nisi sed euismod lacinia, mi nulla rhoncus dolor, non aliquet ligula orci eget nisl. Donec sollicitudin vulputate magna, quis luctus neque consequat in. Vivamus vel leo eget erat pharetra pharetra. Donec dignissim, metus eu efficitur finibus, felis mauris tincidunt elit, ut molestie felis dui sed leo. Morbi sed euismod ipsum. Cras porta massa vel ornare luctus.</p>
         </article>
     </main>
+    
+    <aside>
+        <h2>Comments</h2>
+        <form id="comment-form">
+            <input type="text">
+            <br>
+            <input type="submit">
+        </form>
+        <hr>
+        <section>
+            <img class="avatar" src="https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png-768x805.jpg" alt="user-photo">
+            <hgroup>
+                <h3>Username</h3>
+                <h4>Posted: 01/12/2020</h4>
+            </hgroup>
+            <p>
+                I love CSS!
+            </p>
+        </section>
+        <section>
+            <img class="avatar" src="https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png-768x805.jpg" alt="user-photo">
+            <hgroup>
+                <h3>Username</h3>
+                <h4>Posted: 01/12/2020</h4>
+            </hgroup>
+            <p>
+                It's magic!
+            </p>
+        </section>
+        <section>
+            <img class="avatar" src="https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png-768x805.jpg" alt="user-photo">
+            <hgroup>
+                <h3>Username</h3>
+                <h4>Posted: 01/12/2020</h4>
+            </hgroup>
+            <p>
+                I can make things blue!
+            </p>
+        </section>
+    </aside>
+</main>
+    <footer>
+        <p>&copy; CodeClan News 2020</p>
+    </footer>
     
 </body>
 </html>
